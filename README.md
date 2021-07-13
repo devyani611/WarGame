@@ -1,5 +1,6 @@
 # WarGame
-<br>
+</br>
+
 ### Description of the Game
 </br>
 War Game is a simple card game, typically played by two players using a standard playing card deck.The objective of the game is to win all of the cards.
@@ -10,5 +11,6 @@ If the two cards played are of equal value, then there is a "war".Both players p
 
 ### Assumptions made for the Game
 </br>
+
 **1** For the sake of simplicity, ranks are assigned to the face cards. So 2- 10 ranks are simple number cards and 11 to 13 are Face cards, assigned 14 to the Ace.
 
