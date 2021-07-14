@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="868cf08a-8c25-4f36-8c66-e2b267c1fd0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cards.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cards.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Game.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,10 +31,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PortlandStateJavaSummer2020" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RunManager" selected="Application.Game">
     <configuration name="Game (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -52,9 +53,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CardsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WarGame" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CardsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Game" />
+        <item itemvalue="JUnit.CardsTest" />
         <item itemvalue="Application.Game (1)" />
       </list>
     </recent_temporary>
@@ -94,30 +105,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="409" y="71" width="560" height="585" key="#Game_(1)/0.0.1366.728@0.0.1366.728" timestamp="1626209749996" />
-    <state x="275" y="26" key="#Project_Structure" timestamp="1626134181184">
+    <state x="275" y="26" key="#Project_Structure" timestamp="1626298119591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="26" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1626134181184" />
-    <state width="1323" height="293" key="GridCell.Tab.0.bottom" timestamp="1626210635037">
+    <state x="275" y="26" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1626298119591" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1626297996091">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="293" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1626210635037" />
-    <state width="1323" height="293" key="GridCell.Tab.0.center" timestamp="1626210635037">
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1626297996091" />
+    <state width="1323" height="219" key="GridCell.Tab.0.bottom" timestamp="1626298806693">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="293" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1626210635037" />
-    <state width="1323" height="293" key="GridCell.Tab.0.left" timestamp="1626210635037">
+    <state width="1323" height="219" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1626298806693" />
+    <state width="1323" height="219" key="GridCell.Tab.0.center" timestamp="1626298806693">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="293" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1626210635037" />
-    <state width="1323" height="293" key="GridCell.Tab.0.right" timestamp="1626210635037">
+    <state width="1323" height="219" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1626298806693" />
+    <state width="1323" height="219" key="GridCell.Tab.0.left" timestamp="1626298806692">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="293" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1626210635037" />
-    <state x="186" y="10" key="SettingsEditor" timestamp="1626136010032">
+    <state width="1323" height="219" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1626298806692" />
+    <state width="1323" height="219" key="GridCell.Tab.0.right" timestamp="1626298806693">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1626136010032" />
+    <state width="1323" height="219" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1626298806693" />
+    <state x="186" y="10" key="SettingsEditor" timestamp="1626240739492">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1626240739492" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1626136010374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

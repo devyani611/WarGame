@@ -5,7 +5,7 @@ public class Game {
     public static void main(String[] args) {
 
         //total number of rounds to be played
-        int MAX_ROUNDS = 25;
+        int MAX_ROUNDS = 50;
 
         //list to store the cards
         List<Cards> Deck = new ArrayList<Cards>();
@@ -62,7 +62,7 @@ public class Game {
 
         Collections.shuffle(Deck, new Random()); //shuffle the deck randomly
 
-        //two separate lists of cards for both players
+        //two separate lists of cards for both players, these lists will be used as stacks
         LinkedList<Cards> deck1 = new LinkedList<>();
         LinkedList<Cards> deck2 = new LinkedList<>();
 
@@ -73,7 +73,7 @@ public class Game {
 
         //here the main game begins
         //Since the game could be infinite, I have used for loop to limit the number of rounds played between the players
-        //here the max rounds played is 25
+        //here the max rounds played is 50
         for(int i=0; i< MAX_ROUNDS; i++){
 
             //each player plays one card face up
@@ -156,7 +156,7 @@ public class Game {
                             break;
                         }
                         else{
-                            System.out.println("\nThe cards are still the same for both players, next round of war begins\n");
+                            System.out.println("\nThe cards are still the same for both players, next round of war begins..!!\n");
                             card = 0; // while loop will be reinitialized
                         } //end else
                     }//end if
@@ -164,7 +164,7 @@ public class Game {
                     else
                         card++;
 
-                }//end for
+                }//end while loop
 
             }//end war round else
 
@@ -184,7 +184,7 @@ public class Game {
 
         //If there are still cards in each player's deck, one with the most number of cards wins
         if(deck1.size()!=0 && deck2.size()!=0){
-            System.out.println("\n25 rounds over, declaring the player with the most cards as the winner\n ");
+            System.out.println(MAX_ROUNDS+ " rounds over, declaring the player with the most cards as the winner\n ");
             if(deck1.size() > deck2.size())
                 System.out.println("Player 1 wins the game!!");
             else{
