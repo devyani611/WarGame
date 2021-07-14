@@ -30,8 +30,8 @@ If the two cards played are of equal value, then there is a "war".Both players p
 Follow the below instructions, two players will be initialized and the game will be played either for 25 iterations or if one of decks becomes empty.
 
 * Clone this repo: $git clone https://github.com/devyani611/WarGame.git
-* Open command prompt and run with java: java -Dfile.encoding=UTF-8 -classpath <PATH>/target/classes Game
-* Replace <PATH> in the above command with the path to the repository.
+* Open command prompt and run with java: java -Dfile.encoding=UTF-8 -classpath *<PATH>* /target/classes Game
+* Replace *<PATH>* in the above command with the path to the repository.
 
 
 
