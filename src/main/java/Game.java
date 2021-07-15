@@ -7,6 +7,9 @@ public class Game {
         //total number of rounds to be played
         int MAX_ROUNDS = 50;
 
+        //the minimum cards deck needed to play a war
+        int war_cards_deck_size = 4;
+
         //list to store the cards
         List<Cards> Deck = new ArrayList<Cards>();
 
@@ -112,6 +115,9 @@ public class Game {
 
                 //The war can only be played if each player has enough cards
 
+                //Number of times wars will be played, if the cards continue to be the same
+                int war_round = 1;
+
                 int card = 0; // variable for the while loop, each player will draw 4 cards, three face down, one face up
                 while(card < 4){
                     //either one player runs out of card is game over, break out of the while loop
@@ -125,14 +131,15 @@ public class Game {
                     war2.add(deck2.pop());
 
                     //only compare result when both players have enough cards for war
-                    if(war1.size() == 4 && war2.size() == 4 ){
+                    if(war1.size() == (war_cards_deck_size * war_round) && war2.size() == (war_cards_deck_size * war_round)){
                         //display the 4th war cards from each player
 
-                        System.out.println("\nWar card for player 1 : " + war1.get(3).toString());
-                        System.out.println("War card for player 2 : " + war2.get(3).toString());
+                        //take the last card from the deck which needs to be face up
+                        System.out.println("\nWar card for player 1 : " + war1.get(war1.size()-1).toString());
+                        System.out.println("War card for player 2 : " + war2.get(war2.size()-1).toString());
 
                         //if player 1 wins the war round
-                        if(war1.get(3).getValue() > war2.get(3).getValue()){
+                        if(war1.get(war1.size()-1).getValue() > war2.get(war2.size()-1).getValue()){
                             //player1 get all 10 cards
                             //first add p1card and p2 card in war1
                             war1.add(p1Card);
@@ -145,7 +152,7 @@ public class Game {
                         }//end if
 
                         //player 2 wins the war round
-                        else if(war1.get(3).getValue() < war2.get(3).getValue()){
+                        else if(war1.get(war1.size()-1).getValue() < war2.get(war2.size()-1).getValue()){
                             //player2 get all 10 cards
                             war1.add(p1Card);
                             war1.add(p2Card);
@@ -158,6 +165,7 @@ public class Game {
                         else{
                             System.out.println("\nThe cards are still the same for both players, next round of war begins..!!\n");
                             card = 0; // while loop will be reinitialized
+                            war_round++; // second round of war will be played
                         } //end else
                     }//end if
 
